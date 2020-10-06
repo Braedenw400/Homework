@@ -8,6 +8,7 @@
 /**
  *
  * @author dgb
+ * edited for Homework 1 by Braeden Wilson
  */
 public class MyRunnableThread implements Runnable{
     public double count = 0;
@@ -21,12 +22,12 @@ public class MyRunnableThread implements Runnable{
     public void run()
     {
         Thread thd = Thread.currentThread();
-        while (count < 1000)
+        while (count < 4000)
         {
             try {
                 Thread.sleep(sleepTime);
                 count += inc;
-                System.out.println(thd.getName() + " -- " + count);
+                System.out.println(thd.getName() + count);
             } catch (InterruptedException ex) {
             }
         }

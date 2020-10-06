@@ -7,15 +7,19 @@
 /**
  *
  * @author dgb
+ * edited for Homework 1 by Braeden Wilson
  */
 public class MyMainRunnableThread {
     public static void main(String[] args)
     {
-        Runnable r1 = new MyRunnableThread(10, 300);
-        Runnable r2 = new MyExtendedThread(20, 300);
-        Thread t1 = new Thread(r1, "thread-r1");
-        Thread t2 = new Thread(r2, "thread-r2");
+        Runnable r1 = new MyRunnableThread(1, 1);
+        Runnable r2 = new MyExtendedThread(1, 1);
+        Runnable r3 = new MyExtendedThread(1, 1);
+        Thread t1 = new Thread(r1, "A");
+        Thread t2 = new Thread(r2, "B");
+        Thread t3 = new Thread(r3, "C");
         t1.start();
         t2.start();
+        t3.start();
     }
 }
