@@ -6,9 +6,15 @@
  */
 
 /**
- *
- * @author dgb
- * edited for Homework 1 by Braeden Wilson
+ * Submitted by: Braeden Wilson
+ * Homework Number: 1
+ * Credit to: Dr. David Bethelmy
+ * Submitted on: 10/6/20
+ * By submitting this program with my name,
+ * I affirm that the creation and modification 
+ * of this program is primarily my own work. 
+ * 
+ * Class to implement java threads
  */
 public class MyExtendedThread extends Thread{
     public double count = 0;
